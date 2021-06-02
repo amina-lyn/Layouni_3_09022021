@@ -1,0 +1,27 @@
+/*Accueil*/
+main
+
+.fontionnement{
+    &__title{}
+    &__content{}
+    &__child{}
+}
+
+.restaurants{
+    &__title{}
+    &__content{
+        &__card{
+            &__image{}
+            &__title{}
+            &__location{}
+            &__icon{}
+
+        }
+    }
+
+}
+@media screen and (max-width: 769px){
+
+
+}
+/*La palette du goût*/
