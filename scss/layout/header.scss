@@ -1,0 +1,20 @@
+/*Accueil*/
+header{
+
+    .header-nav{
+        .&__logo{}
+        .&__content{
+            .location{}
+            .header-nav__content--icon{}
+    
+        .&__title{}
+        .&__subtitle{}
+        .&__button{}
+    }
+}
+@media screen and (max-width: 769px){
+
+
+}
+
+/*La palette du goût*/
