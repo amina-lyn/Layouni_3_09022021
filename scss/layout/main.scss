@@ -1,27 +1,58 @@
 /*Accueil*/
-main
+main{}
 
-.fontionnement{
-    &__title{}
-    &__content{}
-    &__child{}
-}
-
-.restaurants{
-    &__title{}
-    &__content{
-        &__card{
-            &__image{}
-            &__title{}
-            &__location{}
-            &__icon{}
-
-        }
+    .fontionnement{
+        .&__title{}
+        .&__content{}
+        .&__child{}
     }
 
+    .restaurants{
+        .&__title{}
+        .&__content{
+             .&__card{
+                .&__image{}
+                .&__title{}
+                .&__location{}
+                .&__icon{}
+
+             }
+        }
+
+    }
 }
 @media screen and (max-width: 769px){
 
 
 }
-/*La palette du goût*/
+/*Menus*/
+
+main{
+    .title{
+        p{}
+        .&__icon{}
+    }
+    .first{
+        .&__title{}
+        .&__subtitle{}
+        .&__text{}
+        .&__price{}
+    }
+    .snd{
+        .&__title{}
+        .&__subtitle{}
+        .&__text{}
+        .&__price{}
+    }
+    .last{
+        .&__title{}
+        .&__subtitle{}
+        .&__text{}
+        .&__price{}
+    }
+    .btn{
+        .commander{}
+    }
+}
+
+@media screen and (max-width: 769px){
