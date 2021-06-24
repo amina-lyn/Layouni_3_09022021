@@ -17,4 +17,17 @@ header{
 
 }
 
-/*La palette du goût*/
+/*Menus*/
+
+header{
+    .header-nav__menu{
+        .&__pic{
+            
+        }
+    }
+}
+
+@media screen and (max-width: 769px){
+
+
+}

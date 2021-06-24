@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 /*Accueil*/
 main{}
 
@@ -11,7 +13,10 @@ main{}
         .&__title{}
         .&__content{
              .&__card{
-                .&__image{}
+                .&__image{
+                    width: 5rem;
+                    height: 6rem;
+                }
                 .&__title{}
                 .&__location{}
                 .&__icon{}
@@ -32,19 +37,19 @@ main{
         p{}
         .&__icon{}
     }
-    .first{
+    .menu{
         .&__title{}
         .&__subtitle{}
         .&__text{}
         .&__price{}
     }
-    .snd{
+    .menu{
         .&__title{}
         .&__subtitle{}
         .&__text{}
         .&__price{}
     }
-    .last{
+    .menu{
         .&__title{}
         .&__subtitle{}
         .&__text{}
