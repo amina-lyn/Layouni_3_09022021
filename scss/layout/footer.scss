@@ -1,6 +1,8 @@
 
 footer{
-    .&__logo{}
+    .&__logo{
+        size: 3rem;
+    }
     .&__card{
         .&__card__text{
             color: #e2e ;}

@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amina-lyn/Layouni_3_09022021.git"
@@ -15,6 +12,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amina-lyn/Layouni_3_09022021/issues"
+  },
+  "scripts": {
+    "start": "node-sass scss/styles.scss css/styles.css",
+    "dev": "node-sass --watch scss/styles.scss css/styles.css"
   },
   "homepage": "https://github.com/amina-lyn/Layouni_3_09022021#readme",
   "dependencies": {
