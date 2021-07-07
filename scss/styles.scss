@@ -4,4 +4,7 @@ body {
 
 /* IMPORT */
 
-@import: "scss/reset.scss";
+@import "./reset.scss";
+@import "layout/main.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";

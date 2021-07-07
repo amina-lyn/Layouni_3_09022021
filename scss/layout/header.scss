@@ -2,12 +2,18 @@
 header{
 
     .header-nav{
-        .&__logo{}
+        .&__logo{
+            width: 3rem;
+            height: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
         .&__content{
             .location{}
             .header-nav__content--icon{}
     
         .&__title{}
+
         .&__subtitle{}
         .&__button{}
     }
@@ -21,13 +27,8 @@ header{
 
 header{
     .header-nav__menu{
-        .&__pic{
-            
-        }
+        .&__pic{}
     }
 }
 
-@media screen and (max-width: 769px){
-
-
-}
+@media screen and (max-width: 769px){}
