@@ -33,24 +33,27 @@ main{}
 main{
     .title{}
     .&__icon{}
-    
-    .first-choice{
-        .&__title{}
-        .&__subtitle{}
-        .&__text{}
-        .&__price{}
+
+    .starter__title{
+        .first-choice{
+            .&__subtitle{}
+            .&__text{}
+            .&__price{}
+        }    
     }
-    .menu{
-        .&__title{}
-        .&__subtitle{}
-        .&__text{}
-        .&__price{}
+    .main__title{ 
+        .snd-choice{
+            .&__subtitle{}
+            .&__text{}
+            .&__price{}
+        }
     }
-    .menu{
-        .&__title{}
-        .&__subtitle{}
-        .&__text{}
-        .&__price{}
+    .desserts__title{
+        .thd-choice{
+            .&__subtitle{}
+            .&__text{}
+            .&__price{}
+        }
     }
     .btn{
         .commander{}
