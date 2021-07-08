@@ -1,63 +1,81 @@
-@charset 'utf-8';
-
 /*Accueil*/
-main{}
-
-    .fontionnement{
-        .&__title{}
-        .&__content{}
-        .&__child{}
-    }
-    .restaurants{
-        .&__title{}
-        .&__content{
-             .&__card{
-                .&__image{
-                    width: 4rem;
-                    height: 5rem;
-                }
-                .&__title{}
-                .&__location{}
-                .&__icon{}
-             }
-        }
-
-    }
+main {
 }
-@media screen and (max-width: 769px){
 
+.fontionnement {
+  &__title {
+  }
+  &__content {
+  }
+  &__child {
+  }
+}
+.local {
+  .local-first {
+    &__title {
+    }
+    &__content {
+      &__card {
+        &__image {
+          width: 4rem;
+          height: 5rem;
+        }
+        &__title {
+        }
+        &__location {
+        }
+        &__icon {
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 769px) {
 }
 /*Menus*/
 
-main{
-    .title{}
-    .&__icon{}
+main {
+  .title {
+  }
+  &__icon {
+  }
 
-    .starter__title{
-        .first-choice{
-            .&__subtitle{}
-            .&__text{}
-            .&__price{}
-        }    
+  .starter__title {
+    .first-choice {
+      &__subtitle {
+      }
+      &__text {
+      }
+      &__price {
+      }
     }
-    .main__title{ 
-        .snd-choice{
-            .&__subtitle{}
-            .&__text{}
-            .&__price{}
-        }
+  }
+  .main__title {
+    .snd-choice {
+      &__subtitle {
+      }
+      &__text {
+      }
+      &__price {
+      }
     }
-    .desserts__title{
-        .thd-choice{
-            .&__subtitle{}
-            .&__text{}
-            .&__price{}
-        }
+  }
+  .desserts__title {
+  }
+  .thd-choice {
+    &__subtitle {
     }
-    .btn{
-        .commander{}
+    &__text {
     }
+    &__price {
+    }
+  }
+}
+.btn {
+  .commander {
+  }
 }
 
-@media screen and (max-width: 769px){}
+@media screen and (max-width: 769px) {
+}

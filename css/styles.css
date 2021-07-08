@@ -1,7 +1,3 @@
-body {
-  background-color: #ffffff; }
-
-/* IMPORT */
 /*
 	Standard CSS Reset
 	This is used to account for differences in browsers.
@@ -131,3 +127,10 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+/*Accueil*/
+.local .local-first__content__card__image {
+  width: 4rem;
+  height: 5rem; }
+
+/*Menus*/

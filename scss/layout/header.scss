@@ -2,15 +2,15 @@
 header{
 
     .header-nav{
-        .&__logo{}
-        .&__content{
+        &__logo{}
+        &__content{
             .location{}
             .header-nav__content--icon{}
     
-        .&__title{}
+        &__title{}
 
-        .&__subtitle{}
-        .&__button{}
+        &__subtitle{}
+        &__button{}
     }
 }
 @media screen and (max-width: 769px){
@@ -22,7 +22,7 @@ header{
 
 header{
     .header-nav__menu{
-        .&__pic{
+        &__pic{
             width: 8rem;
             height: 8rem;
         }

@@ -1,12 +1,13 @@
 footer {
-  .&__logo {
+  &__logo {
     width: 100%;
   }
-  .&__card {
-    .&__card__text {
+  &__card {
+    &__card__text {
     }
   }
 }
 
 @media screen and (max-width: 769px) {
+  width: 100%;
 }
