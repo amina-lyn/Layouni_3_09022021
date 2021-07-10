@@ -1,3 +1,12 @@
-:root {
-  --background-color: blue;
-  --marging-xs: 1rem; }
+/*Accueil*/
+.local {
+  background-color: #f2f2f2; }
+  .local .local__content__card__image {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 1rem; }
+  .local .local__content__card__description {
+    background-color: var(--background-color); }
+
+/*Menus*/

@@ -2,7 +2,7 @@
 main {
 }
 
-.fontionnement {
+.todolist {
   &__title {
   }
   &__content {
@@ -11,20 +11,27 @@ main {
   }
 }
 .local {
-  .local-first {
+  background-color: #f2f2f2;
+
+  .local {
     &__title {
     }
     &__content {
       &__card {
         &__image {
-          width: 4rem;
-          height: 5rem;
+          width: 100%;
+          height: 20%;
+          object-fit: cover;
+          border-radius: 1rem;
         }
-        &__title {
-        }
-        &__location {
-        }
-        &__icon {
+        &__description {
+          background-color: var(--background-color);
+          &__title {
+          }
+          &__location {
+          }
+          &__icon {
+          }
         }
       }
     }
