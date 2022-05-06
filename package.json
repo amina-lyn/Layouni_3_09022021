@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/amina-lyn/Layouni_3_09022021#readme",
   "dependencies": {
-    "bootstrap":"5.0.1",
     "node-sass": "^6.0.0"
   }
 }
