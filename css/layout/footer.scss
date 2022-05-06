@@ -1,11 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import "../reset.scss";
+@import "../variables.scss";
+@import "../base.scss";
+@import "../components.scss";
+@import "../layout/main.scss";
+@import "../layout/header.scss";
+@import "../mixin.scss";
+
 footer {
-  &__logo {
-  }
-  &__card {
-    &__card__text {
-    }
-  }
+  background-color: $background-color;
 }
 
-@media screen and (max-width: 769px) {
+.logo-footer {
+  width: 100%;
+  @include center;
+  font-size: 3rem;
+  color: white;
 }

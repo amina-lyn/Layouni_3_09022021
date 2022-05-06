@@ -6,6 +6,7 @@
     "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
 */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
 html,
 body,
@@ -137,44 +138,160 @@ table {
   border-spacing: 0;
 }
 
-/*Accueil*/
-.local {
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer {
   background-color: #f2f2f2;
 }
 
-.local .local__content__card__image {
+.logo-footer {
   width: 100%;
-  height: 20%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1rem;
-}
-
-.local .local__content__card__description {
-  background-color: var(--background-color);
-}
-
-/*Menus*/
-/*Accueil resto*/
-header {
-  /*Menus*/
-}
-
-header .header-nav__logo {
-  border: solid black;
-  width: 5rem;
-  height: 3rem;
-}
-
-header .header-nav__content__button {
-  width: 5rem;
-  height: 3rem;
-  border: solid black;
-}
-
-header header .header-nav__menu__pic {
-  width: 8rem;
-  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  color: white;
 }
 
 /*
@@ -315,14 +432,8 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  --background-color: #f2f2f2;
-  --marging-xs: 1rem;
-  --white-color: #ffffff;
-  --background-color: $color;
-}
-
 /*Accueil*/
+/*HEADER*/
 .nav-home {
   width: 100%;
 }
@@ -356,6 +467,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 10px;
 }
 
 p {
@@ -371,7 +483,7 @@ p {
   padding-bottom: 1rem;
 }
 
-.logo-container {
+.logo-header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +510,7 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.title {
+.reservation-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,9 +521,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+  padding: 0px 90px;
 }
 
-.subtitle {
+.reservation-subtitle {
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +535,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 10px;
 }
 
 .button-container {
@@ -454,6 +568,29 @@ h1 {
   font-weight: bold;
   padding: 0px 20px;
   border-radius: 50px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+}
+
+.logo-footer {
+  width: 100%;
+  font-size: 25px;
+  font-family: Shrikhand;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 10px;
+}
+
+.text-footer {
+  color: white;
+  padding: 5px;
 }
 
 * {
