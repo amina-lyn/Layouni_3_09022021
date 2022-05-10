@@ -501,6 +501,20 @@ p {
 }
 
 .reservation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f2f2f2;
 }
 
@@ -525,6 +539,7 @@ h1 {
 }
 
 .reservation-subtitle {
+  width: 80%;
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,7 +550,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 10px;
+  text-align: center;
 }
 
 .button-container {
@@ -579,9 +594,11 @@ img {
   border-radius: 20px 20px 0 0;
 }
 
-.restaurant-card_image {
-  -webkit-box-shadow: 6px 6px 6px black;
-          box-shadow: 6px 6px 6px black;
+.restaurant-card {
+  -webkit-box-shadow: 6px 6px 6px gray;
+          box-shadow: 6px 6px 6px gray;
+  margin-bottom: 6px;
+  border-radius: 20px;
 }
 
 .restaurant-description {
@@ -591,6 +608,7 @@ img {
 
 .restaurant-name {
   font-weight: bold;
+  color: black;
   background-color: white;
   padding: 0 8px;
 }
@@ -637,6 +655,10 @@ footer {
 .text-footer {
   color: white;
   padding: 5px;
+}
+
+* a {
+  text-decoration: none;
 }
 
 /* {
