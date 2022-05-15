@@ -188,6 +188,7 @@ p {
   font-family: Shrikhand;
   box-shadow: 1px 1px 3px 1px gray;
 }
+/*Reservation*/
 .reservation {
   width: 100%;
   display: flex;
@@ -199,8 +200,7 @@ p {
 
 h1 {
   font-size: 22px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 40px 20px;
 }
 .reservation-title {
   @include center;
@@ -231,6 +231,15 @@ h1 {
 
 /*MAIN*/
 
+/*Fonctionnement*/
+.fonctionnement {
+  width: 100%;
+}
+
+/*Restaurants*/
+.restaurant {
+  background-color: #f2f2f2;
+}
 img {
   width: 100%;
   height: 200px;
@@ -238,9 +247,10 @@ img {
   border-radius: 20px 20px 0 0;
 }
 .restaurant-card {
-  box-shadow: 6px 6px 6px gray;
+  box-shadow: 6px 6px 6px #f2f2f2;
   margin-bottom: 6px;
   border-radius: 20px;
+  padding: 20px;
 }
 .restaurant-description {
   background-color: white;
@@ -279,9 +289,19 @@ footer {
 }
 .text-footer {
   color: white;
+  padding: 5px 5px;
+}
+.handshake {
   padding: 5px;
 }
 
+.ustensils {
+  padding: 8px;
+}
+
+.text-without-icon {
+  padding: 5px 8px 8px 8px;
+}
 * a {
   text-decoration: none;
 }
