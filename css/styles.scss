@@ -162,8 +162,9 @@ table {
 .location {
   width: 100%;
   height: 2rem;
-  background-color: #cccc;
+  background-color: #dddddd;
   @include center;
+  color: rgb(65, 65, 65);
 }
 
 .icon-location {
@@ -205,7 +206,8 @@ h1 {
 .reservation-title {
   @include center;
   font-weight: bold;
-  padding: 0px 90px;
+  padding: 10px 90px;
+  text-align: center;
 }
 
 .reservation-subtitle {
@@ -213,11 +215,13 @@ h1 {
   color: grey;
   @include center;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .button-container {
   width: 100%;
   @include center;
+  padding-bottom: 40px;
 }
 .button {
   height: 50px;
@@ -227,6 +231,9 @@ h1 {
   font-weight: bold;
   padding: 0px 20px;
   border-radius: 50px;
+  &:hover {
+    background: linear-gradient($color-secondary-hover, $color-primary-hover);
+  }
 }
 
 /*MAIN*/
@@ -235,16 +242,49 @@ h1 {
 .fonctionnement {
   width: 100%;
 }
+.fonctionnement-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement-child {
+  width: 70%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 6px 6px 6px 1px #dfdcdc;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  & div {
+    margin-left: -25%;
+  }
+}
+.fonctionnement-number {
+  background-color: $color-primary;
+  color: white;
+  height: 25px;
+  width: 25px;
+  @include center;
+  border-radius: 50%;
+}
 
 /*Restaurants*/
 .restaurant {
   background-color: #f2f2f2;
 }
-img {
+/*img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+}*/
+.restaurant-card_image1 {
+  background-image: /Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg;
 }
 .restaurant-card {
   box-shadow: 6px 6px 6px #f2f2f2;

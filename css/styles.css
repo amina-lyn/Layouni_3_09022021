@@ -445,7 +445,7 @@ table {
 .location {
   width: 100%;
   height: 2rem;
-  background-color: #cccc;
+  background-color: #dddddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,6 +455,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #414141;
 }
 
 .icon-location {
@@ -535,7 +536,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  padding: 0px 90px;
+  padding: 10px 90px;
+  text-align: center;
 }
 
 .reservation-subtitle {
@@ -551,6 +553,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .button-container {
@@ -564,6 +567,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 
 .button {
@@ -585,10 +589,72 @@ h1 {
   border-radius: 50px;
 }
 
+.button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7a6e0), to(#a17bcf));
+  background: linear-gradient(#f7a6e0, #a17bcf);
+}
+
 /*MAIN*/
 /*Fonctionnement*/
 .fonctionnement {
   width: 100%;
+}
+
+.fonctionnement-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement-child {
+  width: 70%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 6px 6px 6px 1px #dfdcdc;
+          box-shadow: 6px 6px 6px 1px #dfdcdc;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #f2f2f2;
+}
+
+.fonctionnement-child div {
+  margin-left: -25%;
+}
+
+.fonctionnement-number {
+  background-color: #9356dc;
+  color: white;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
 }
 
 /*Restaurants*/
@@ -602,6 +668,10 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+
+.restaurant-card_image {
+  background-image: jay-wennington;
 }
 
 .restaurant-card {
