@@ -965,8 +965,8 @@ footer {
   text-decoration: none;
 }
 
-/*DESKTOP VIEW*/
-@media screen and (min-width: 760px) {
+/*IPAD VIEW*/
+@media screen and (min-width: 768px) {
   .logo-header {
     padding: 20px 0 20px 0;
   }
@@ -989,9 +989,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    padding: 20px 0;
   }
   .fonctionnement-list {
-    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1006,14 +1007,17 @@ footer {
         justify-content: space-around;
   }
   .fonctionnement-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    min-width: 200px;
+    width: 100%;
+    margin: 15px;
+    padding: 0;
+    padding-right: 5px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .fonctionnement-child div {
+    margin-left: -10px;
   }
   .restaurant-title {
     display: -webkit-box;
@@ -1028,7 +1032,21 @@ footer {
   }
 }
 
-/** {
-  outline: solid 1px red;
-}*/
-/*# sourceMappingURL=styles.css.map */
+/*DESKTOP VIEW*/
+@media screen and (min-width: 1024px) {
+  .fonctionnement-child {
+    width: 250px;
+    padding-right: 25px;
+  }
+  .restaurant-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurant-card {
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=accueil.css.map */
