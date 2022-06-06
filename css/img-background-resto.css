@@ -1,16 +1,12 @@
-// /* IMPORT */
-
-@import "../common/reset.scss";
-@import "../common/variables.scss";
-@import "../layout/main.scss";
-@import "../layout/footer.scss";
-@import "../layout/header.css";
-@import "../common/mixin.scss";
-@import "../accueil.scss";
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/reset.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/variables.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/main.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/footer.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/header.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/mixin.css);
+@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/accueil.css);
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import "../img-background-resto.scss";
-
 /*
 	Standard CSS Reset
 	This is used to account for differences in browsers.
@@ -123,7 +119,6 @@ section {
 
 body {
   line-height: 1;
-  font-family: Roboto;
 }
 
 ol,
@@ -148,18 +143,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*HEADER*/
-
-.logo-header{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-family: Shrikhand;
-  box-shadow: 1px 1px 3px 1px ;
+/* IMG ACCUEIL */
+.restaurant-card_image1 {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
-.header-img_page1{
-  width: 100%;
+.restaurant-card_image2 {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
+
+.restaurant-card_image3 {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.restaurant-card_image4 {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+/* IMG HEADER RESTO */
+.header-img_page1 {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+/*# sourceMappingURL=img-background-resto.css.map */

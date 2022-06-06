@@ -1,3 +1,15 @@
+
+@import "./common/reset.css";
+@import "./common/variables.css";
+@import "./layout/main.css";
+@import "./layout/footer.css";
+@import "./layout/header.css";
+@import "./common/mixin.css";
+@import "./accueil.css";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
+
+
 /*
 	Standard CSS Reset
 	This is used to account for differences in browsers.
@@ -136,6 +148,7 @@ table {
 }
 /*# sourceMappingURL=reset.css.map */
 
+/* IMG ACCUEIL */
 .restaurant-card_image1 {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
@@ -147,4 +160,10 @@ table {
 }
 .restaurant-card_image4 {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+/* IMG HEADER RESTO */
+
+.header-img_page1{
+background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }

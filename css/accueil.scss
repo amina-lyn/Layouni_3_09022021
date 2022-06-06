@@ -1,16 +1,15 @@
 // /* IMPORT */
 
-@import "./reset.scss";
-@import "./variables.scss";
-@import "./base.scss";
-@import "./components.scss";
-@import "./layout/main.scss";
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-@import "./mixin.scss";
+@import "../css/common/reset.scss";
+@import "../css/common/variables.scss";
+@import "../css/layout/main.css";
+@import "../css/layout/header.css";
+@import "../css/layout/footer.css";
+@import "../css/common/mixin.scss";
+@import "../css/accueil.css";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import "./img-background-resto/";
+@import "./img-background-resto";
 // pages -> layout -> components
 /*
 	Standard CSS Reset
@@ -149,7 +148,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /*Accueil*/
 /*HEADER*/
 .nav-home {
@@ -164,6 +162,7 @@ table {
   width: 100%;
   height: 2rem;
   background-color: #dddddd;
+  /*@include à remettre*/
   @include center;
   color: rgb(65, 65, 65);
 }
@@ -183,9 +182,7 @@ p {
 
 .logo-header {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   font-size: 3rem;
   font-family: Shrikhand;
   box-shadow: 1px 1px 3px 1px gray;
@@ -277,7 +274,9 @@ h1 {
   color: white;
   height: 25px;
   width: 25px;
-  @include center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 
@@ -301,9 +300,7 @@ h1 {
   color: rgb(27, 105, 79);
   width: 90px;
   border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   margin-top: 15px;
   margin-right: 12px;
 }
@@ -408,7 +405,9 @@ footer {
     padding-top: 30px;
   }
   .fonctionnement-title {
-    @include center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding:20px 0;
   }

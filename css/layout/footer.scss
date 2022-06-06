@@ -1,19 +1,182 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import "../reset.scss";
-@import "../variables.scss";
-@import "../base.scss";
-@import "../components.scss";
+// /* IMPORT */
+
+@import "../common/reset.scss";
+@import "../common/variables.scss";
 @import "../layout/main.scss";
-@import "../layout/header.scss";
-@import "../mixin.scss";
+@import "../layout/header.css";
+@import"../layout/footer.css";
+@import "../common/mixin.css";
+@import "../accueil.css";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
+@import "../img-background-resto.scss";
+// pages -> layout -> components
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: Roboto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 
 footer {
-  background-color: $background-color;
+  background-color: black;
+}
+.logo-footer {
+  width: 90%;
+  font-size: 25px;
+  font-family: Shrikhand;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 5px 5px 5px;
+}
+.text-footer {
+  color: white;
+  padding: 5px 5px;
+}
+.handshake {
+  padding: 5px;
 }
 
-.logo-footer {
-  width: 100%;
-  @include center;
-  font-size: 3rem;
-  color: white;
+.ustensils {
+  padding: 8px;
 }
+
+.text-without-icon {
+  padding: 5px 8px 8px 8px;
+}
+* a {
+  text-decoration: none;
+ }
