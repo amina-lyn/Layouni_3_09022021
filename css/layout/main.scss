@@ -150,14 +150,19 @@ table {
   border-spacing: 0;
 }
 
+
 /* MAIN PAGE */
+main{
+  width: 100%;
+}
 .menu{
   width: 100%;
   border-radius: 50px 50px 0 0 ;
   background-color: $background-color;
-  padding-left: 15px
+ 
+ 
 }
-.title-menu{
+.title-restaurant{
   @include center;
 }
 
@@ -167,11 +172,50 @@ table {
   font-family: Libre Bodoni;
   font-style: italic;
 }
-.entrée-title{
+h2{
   color: rgb(73, 73, 73);
   text-decoration: underline $color-tertiary 3px ;
   padding-bottom: 5px;
+  width: 100%;
 }
+.section-menu__title{
+  width: 90%;
+  padding: 10px;
+}
+
+
+.cards-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-menu{
+  width: 90%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  box-shadow: 6px 6px 6px 1px #dfdcdc;
+  margin: 20px 0 20px 0;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+}
+.subtitle{
+font-size:20px;
+font-weight: 900;
+}
+
+.text{
+  color: rgb(73, 73, 73);
+}
+.price{
+  font-weight: bolder;
+}
+/* BUTTON */
 .button-container {
   width: 100%;
   @include center;
@@ -189,3 +233,6 @@ table {
     background: linear-gradient($color-secondary-hover, $color-primary-hover);
   }
 }
+
+/*{
+   outline: solid 1px red}*/
