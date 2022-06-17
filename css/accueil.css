@@ -304,8 +304,9 @@ table {
 }
 
 /* IMG HEADER RESTO */
-.header-img_page1 {
+#header-img_page1 {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-color: red;
 }
 
 /*
@@ -804,6 +805,7 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 5px 5px 5px 5px;
+  color: white;
 }
 
 .text-footer {

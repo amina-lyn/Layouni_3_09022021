@@ -2,11 +2,7 @@
 
 @import "../common/reset.scss";
 @import "../common/variables.scss";
-@import "../layout/main.scss";
-@import "../layout/footer.scss";
-@import "../layout/header.css";
 @import "../common/mixin.scss";
-@import "../accueil.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
 @import "../img-background-resto.scss";
@@ -160,6 +156,8 @@ table {
   box-shadow: 1px 1px 3px 1px ;
 }
 
-.header-img_page1{
+.header-image{
   width: 100%;
+  height: 300px;
+  background-size: cover;
 }

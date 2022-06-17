@@ -2,14 +2,11 @@
 
 @import "../common/reset.scss";
 @import "../common/variables.scss";
-@import "../layout/main.css";
-@import "../layout/header.css";
-@import "../layout/footer.css";
+@import "../layout/header.scss";
+@import "../layout/footer.scss";
 @import "../common/mixin.scss";
-@import "../accueil.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import url('https://fonts.googleapis.com/css2? family= Libre+Bodoni:ital,wght@1,700 & family= Shrikhand & display=swap');
 @import "../img-background-resto.scss";
 // pages -> layout -> components
 /*
@@ -155,35 +152,44 @@ table {
 main{
   width: 100%;
 }
+
 .menu{
   width: 100%;
   border-radius: 50px 50px 0 0 ;
   background-color: $background-color;
- 
+ margin-top:-50px; 
  
 }
 .title-restaurant{
   @include center;
 }
 
-.menu-title {
+.menu-title{
   font-size: 35px;
   padding: 35px 15px;
-  font-family: Libre Bodoni;
-  font-style: italic;
+  font-family: Shrikhand;
 }
 h2{
   color: rgb(73, 73, 73);
-  text-decoration: underline $color-tertiary 3px ;
   padding-bottom: 5px;
   width: 100%;
+}
+.icon-title{
+ width: 30px;
+ height: 40px;
+}
+
+.underliner{
+  height: 3px;
+  width: 50px;
+background-color: $color-tertiary;
+margin-left: 10px;
+
 }
 .section-menu__title{
   width: 90%;
   padding: 10px;
 }
-
-
 .cards-container{
   width:100%;
   display: flex;
@@ -194,15 +200,15 @@ h2{
 .card-menu{
   width: 90%;
   height: 40px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   box-shadow: 6px 6px 6px 1px #dfdcdc;
   margin: 20px 0 20px 0;
   border-radius: 20px;
   padding: 10px;
   background-color: white;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
 }
 .subtitle{
 font-size:20px;
@@ -211,9 +217,13 @@ font-weight: 900;
 
 .text{
   color: rgb(73, 73, 73);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .price{
   font-weight: bolder;
+  width: 50px;
 }
 /* BUTTON */
 .button-container {
@@ -227,7 +237,7 @@ font-weight: 900;
   background: linear-gradient($color-secondary, $color-primary);
   color: white;
   font-weight: bold;
-  padding: 0px 20px;
+  padding: 0px 40px;
   border-radius: 50px;
   &:hover {
     background: linear-gradient($color-secondary-hover, $color-primary-hover);

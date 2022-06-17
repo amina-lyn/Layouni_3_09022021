@@ -2,11 +2,7 @@
 
 @import "../common/reset.scss";
 @import "../common/variables.scss";
-@import "../layout/main.scss";
-@import "../layout/header.css";
-@import"../layout/footer.css";
 @import "../common/mixin.css";
-@import "../accueil.css";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
 @import "../img-background-resto.scss";
@@ -150,6 +146,7 @@ table {
 }
 
 
+/*FOOTER*/
 
 footer {
   background-color: black;
@@ -161,6 +158,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   padding: 5px 5px 5px 5px;
+  color:white;
 }
 .text-footer {
   color: white;
@@ -168,10 +166,12 @@ footer {
 }
 .handshake {
   padding: 5px;
+  color: white;
 }
 
 .ustensils {
   padding: 8px;
+  color: white;
 }
 
 .text-without-icon {
@@ -179,4 +179,4 @@ footer {
 }
 * a {
   text-decoration: none;
- }
+}
