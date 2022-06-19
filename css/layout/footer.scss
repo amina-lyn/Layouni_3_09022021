@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
 @import "../img-background-resto.scss";
+
 // pages -> layout -> components
 /*
 	Standard CSS Reset
@@ -163,17 +164,17 @@ footer {
 .text-footer {
   color: white;
   padding: 5px 5px;
-}
-.handshake {
-  padding: 5px;
-  color: white;
+  & i {
+    color: white;
+  }
 }
 
 .ustensils {
   padding: 8px;
-  color: white;
 }
-
+.handshake{
+  padding:0 8px 0 5px;
+}
 .text-without-icon {
   padding: 5px 8px 8px 8px;
 }

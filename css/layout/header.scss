@@ -145,7 +145,10 @@ table {
   border-spacing: 0;
 }
 /*HEADER*/
-
+.header-nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
 .logo-header{
   width: 100%;
   display: flex;
@@ -160,4 +163,12 @@ table {
   width: 100%;
   height: 300px;
   background-size: cover;
+}
+
+.return-icon{
+color: black;
+position: absolute;
+top:5px;
+left: 5px;
+font-size: 35px;
 }

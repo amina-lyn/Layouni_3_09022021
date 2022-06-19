@@ -467,14 +467,16 @@ footer {
   padding: 5px 5px;
 }
 
-.handshake {
-  padding: 5px;
+.text-footer i {
   color: white;
 }
 
 .ustensils {
   padding: 8px;
-  color: white;
+}
+
+.handshake {
+  padding: 0 8px 0 5px;
 }
 
 .text-without-icon {

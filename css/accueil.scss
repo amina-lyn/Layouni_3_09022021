@@ -374,21 +374,23 @@ footer {
 .text-footer {
   color: white;
   padding: 5px 5px;
+  & i {
+    color: white;
+  }
 }
-.handshake {
-  padding: 5px;
-}
-
 .ustensils {
   padding: 8px;
 }
-
+.handshake{
+  padding:0 8px 0 5px;
+}
 .text-without-icon {
   padding: 5px 8px 8px 8px;
 }
 * a {
   text-decoration: none;
 }
+
 /*IPAD VIEW*/
 
 @media screen and (min-width: 768px) {
