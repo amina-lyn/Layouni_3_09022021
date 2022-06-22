@@ -197,6 +197,9 @@ margin-left: 10px;
   justify-content: center;
   align-items: center;
 }
+#card-container{
+  animation-delay: 3s;
+}
 .card-menu{
   width: 90%;
   height: 40px;
@@ -206,11 +209,18 @@ margin-left: 10px;
   padding: 10px;
   background-color: white;
   overflow: hidden;
+  display:flex ;
+  flex-direction: column;
+  animation-name:appareted ;
+  
 }
 .info{
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 50px;
 }
+
 .subtitle{
 font-size:20px;
 font-weight: 900;
@@ -218,6 +228,7 @@ padding-bottom: 5px;
 }
 
 .text{
+  width: 100%;
   color: rgb(73, 73, 73);
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -228,14 +239,14 @@ padding-bottom: 5px;
   width: 50px;
 }
 .select-container{
-  width: 50px;
+  width: 60px;
   height:60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: $color-tertiary;
- position: relative;
- bottom: 35px;
- margin-right:-60px;
+  position: relative;
+  bottom: 35px;
+  margin-right: -68px;
 }
 .check{
   color: white;
@@ -246,13 +257,29 @@ padding-bottom: 5px;
   margin-top: 20px;
   
 }
-.card-menu:hover .select-container{
+.card-menu:hover{
+& .select-container{
   transform: translateX(-50px);
   transition:linear 0.5s;
+}
+& .price{
+  transform: translateX(-50px);
+  transition:linear 0.5s;
+}
+& .text{
+  width: calc(100% - 100px);
+}
 }
 .card-menu:hover .check{
   transform: rotate(360deg);
   transition: 1s;
+}
+.card-menu:hover .info .price{
+  display: flex;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 /* BUTTON */
 .button-container {
@@ -275,3 +302,7 @@ padding-bottom: 5px;
 
 /*{
    outline: solid 1px red}*/
+
+
+
+  

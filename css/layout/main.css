@@ -1487,6 +1487,11 @@ h2 {
           align-items: center;
 }
 
+#card-container {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .card-menu {
   width: 90%;
   height: 40px;
@@ -1497,15 +1502,26 @@ h2 {
   padding: 10px;
   background-color: white;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation-name: appareted;
+          animation-name: appareted;
 }
 
 .info {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 50px;
 }
 
 .subtitle {
@@ -1515,6 +1531,7 @@ h2 {
 }
 
 .text {
+  width: 100%;
   color: #494949;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1527,14 +1544,14 @@ h2 {
 }
 
 .select-container {
-  width: 50px;
+  width: 60px;
   height: 60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99e2d0;
   position: relative;
   bottom: 35px;
-  margin-right: -60px;
+  margin-right: -68px;
 }
 
 .check {
@@ -1559,11 +1576,33 @@ h2 {
   transition: linear 0.5s;
 }
 
+.card-menu:hover .price {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+.card-menu:hover .text {
+  width: calc(100% - 100px);
+}
+
 .card-menu:hover .check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.card-menu:hover .info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* BUTTON */
