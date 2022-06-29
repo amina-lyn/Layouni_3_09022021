@@ -1453,10 +1453,6 @@ h2 {
   width: 100%;
 }
 
-.icon-title {
-  font-size: 20px;
-}
-
 .underliner {
   height: 3px;
   width: 50px;
@@ -1658,6 +1654,40 @@ h2 {
 .button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#f7a6e0), to(#a17bcf));
   background: linear-gradient(#f7a6e0, #a17bcf);
+}
+
+/* COEUR */
+.title-heart {
+  width: 20px;
+  height: 20px;
+  margin-right: -24px;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+}
+
+.title-heart_hidden {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+}
+
+.heart-block:hover .title-heart {
+  opacity: 0;
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+}
+
+.heart-block:hover .title-heart_hidden {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
 }
 
 /*{
