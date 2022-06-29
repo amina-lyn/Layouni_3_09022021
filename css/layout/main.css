@@ -1454,8 +1454,7 @@ h2 {
 }
 
 .icon-title {
-  width: 30px;
-  height: 40px;
+  font-size: 20px;
 }
 
 .underliner {
@@ -1485,11 +1484,30 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-#card-container {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+@-webkit-keyframes apparition-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card-menu {
@@ -1509,8 +1527,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation-name: appareted;
-          animation-name: appareted;
 }
 
 .info {

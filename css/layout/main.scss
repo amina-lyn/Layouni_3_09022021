@@ -175,8 +175,7 @@ h2{
   width: 100%;
 }
 .icon-title{
- width: 30px;
- height: 40px;
+ font-size:20px ;
 }
 
 .underliner{
@@ -196,9 +195,13 @@ margin-left: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ animation-name: apparition-menu;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
 }
-#card-container{
-  animation-delay: 3s;
+@keyframes apparition-menu {
+ 0% {opacity:0;}
+ 100% {opacity: 1;}
 }
 .card-menu{
   width: 90%;
@@ -211,7 +214,7 @@ margin-left: 10px;
   overflow: hidden;
   display:flex ;
   flex-direction: column;
-  animation-name:appareted ;
+  //animation-name:appareted ;
   
 }
 .info{
@@ -269,18 +272,19 @@ padding-bottom: 5px;
 & .text{
   width: calc(100% - 100px);
 }
-}
-.card-menu:hover .check{
+& .check{
   transform: rotate(360deg);
   transition: 1s;
 }
-.card-menu:hover .info .price{
+& .info .price{
   display: flex;
   flex-wrap: wrap;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+}
+
 /* BUTTON */
 .button-container {
   width: 100%;
