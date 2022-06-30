@@ -174,13 +174,11 @@ h2{
   padding-bottom: 5px;
   width: 100%;
 }
-
 .underliner{
 height: 3px;
 width: 50px;
 background-color: $color-tertiary;
 margin-left: 10px;
-
 }
 .section-menu__title{
   width: 90%;
@@ -192,13 +190,14 @@ margin-left: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- animation-name: apparition-menu;
- animation-duration: 3s;
- animation-iteration-count: 1;
 }
+
 @keyframes apparition-menu {
- 0% {opacity:0;}
- 100% {opacity: 1;}
+ 0% {opacity:0;
+  transform: translateY(30px);}
+ 100% {opacity: 1;
+  transform: translateY(0);
+}
 }
 .card-menu{
   width: 90%;
@@ -211,9 +210,20 @@ margin-left: 10px;
   overflow: hidden;
   display:flex ;
   flex-direction: column;
-  //animation-name:appareted ;
-  
+  animation-name: apparition-menu;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+ }
+ 
+.card-2{
+  animation-delay :0.5s;
 }
+.card-3{
+  animation-delay :1s;
+}
+
 .info{
   width: 100%;
   display: flex;
@@ -255,7 +265,6 @@ padding-bottom: 5px;
   align-items: center;
   font-size: 20px;
   margin-top: 20px;
-  
 }
 .card-menu:hover{
 & .select-container{
@@ -263,11 +272,12 @@ padding-bottom: 5px;
   transition:linear 0.5s;
 }
 & .price{
-  transform: translateX(-50px);
+  transform: translateX(-15px);
   transition:linear 0.5s;
 }
 & .text{
   width: calc(100% - 100px);
+  transition:linear 0.5s;
 }
 & .check{
   transform: rotate(360deg);
@@ -281,7 +291,6 @@ padding-bottom: 5px;
   overflow: hidden;
 }
 }
-
 /* BUTTON */
 .button-container {
   width: 100%;

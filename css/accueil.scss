@@ -345,7 +345,7 @@ h1 {
   transform: scale(0);
   background: -webkit-linear-gradient($color-primary, $color-secondary);
   -webkit-background-clip: text;
-  color: transparent;
+  color:$color-primary;
   transition: 3s linear;
 }
 .heart-block {
@@ -353,13 +353,11 @@ h1 {
     & .restaurant-heart {
       opacity: 0;
       transition: 3s linear;
-      
     }
     & .restaurant-heart_hidden {
       opacity: 1;
       transform: scale(1);
       transition: 3s linear;
-      
     }
   }
 }
