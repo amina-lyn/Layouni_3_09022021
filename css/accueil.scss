@@ -149,6 +149,117 @@ table {
   border-spacing: 0;
 }
 /*Accueil*/
+.load-spinner{
+  animation: load-spinner 3s forwards linear;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.8;
+}
+.spinner-block {
+  justify-content: center;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  cursor: wait;
+}
+.spinner2 {
+    position: fixed;
+    margin: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: $color-primary;
+}
+
+.spinner2::before, .spinner2::after {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background-color: inherit;
+    content: "";
+}
+
+.spinner2::before {
+    transform: translateX(-120%);
+    transform-origin: 32px 50%;
+    animation: orbit-1 1s infinite linear;
+}
+
+.spinner2::after {
+    transform: translateX(120%);
+    transform-origin: -16px 50%;
+    animation: orbit-2 1s infinite linear;
+}
+
+@keyframes orbit-1 {
+  
+    0% {
+      background-color:$color-tertiary;
+        transform: translateX(-120%) rotate(180deg);
+    }
+    30% {
+      background-color:$color-secondary;
+        transform: translateX(-120%) rotate(0deg);
+    }
+    70% {
+      background-color:$color-tertiary;
+        transform: translateX(-120%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-120%) rotate(-180deg);
+    }
+}
+
+@keyframes orbit-2 {
+    0% {
+      background-color:$color-tertiary;
+        transform: translateX(120%) rotate(180deg);
+    }
+    30% {
+      background-color:$color-secondary;
+        transform: translateX(120%) rotate(0deg);
+    }
+    70% {
+      background-color:$color-tertiary;
+        transform: translateX(120%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(120%) rotate(-180deg);
+    }
+}
+@keyframes load-spinner {
+  0% {
+transform: scale(1);
+  }
+90% {
+  transform: scale(1);
+}
+99% {
+  transform: scale(0);
+  opacity: 0;
+}
+100% {
+  transform: scale(0);
+  display: none;
+  opacity: 0;
+}
+}
+
 /*HEADER*/
 .nav-home {
   width: 100%;
@@ -264,8 +375,9 @@ h1 {
 
 .fonctionnement-child:hover {
   background-color: rgb(234, 217, 240);
-  & div i {
+  & .fonctionnement-icon {
     color: $color-primary;
+    
   }
 }
 .fonctionnement-number {
