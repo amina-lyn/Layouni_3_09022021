@@ -450,15 +450,13 @@ h1 {
   width: 20px;
   height: 20px;
   margin-right: -24px;
-  transition: 3s linear;
 }
 .restaurant-heart_hidden {
   opacity: 0;
   transform: scale(0);
   background: -webkit-linear-gradient($color-primary, $color-secondary);
   -webkit-background-clip: text;
-  color:$color-primary;
-  transition: 3s linear;
+  color:transparent;
 }
 .heart-block {
   &:hover {
@@ -485,7 +483,6 @@ footer {
   justify-content: flex-start;
   padding: 5px 5px 5px 5px;
   color:white;
-  
 }
 .text-footer {
   color: white;
