@@ -1,174 +1,68 @@
-// /* IMPORT */
 
-@import "../common/reset.scss";
-@import "../common/variables.scss";
-@import "../common/mixin.scss";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import "../img-background-resto.scss";
-
-/*
-	Standard CSS Reset
-	This is used to account for differences in browsers.
-	Without a reset stylesheet there could be differences
-	between browsers when loading your html website.
-    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: Roboto;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*HEADER*/
+/*HEADER page*/ 
 .header-nav{
-  display: flex;
-  flex-direction: row-reverse;
-}
-.logo-header{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-family: Shrikhand;
-  box-shadow: 1px 1px 3px 1px ;
-}
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .logo-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: Shrikhand;
+    box-shadow: 1px 1px 3px 1px ;
+  }
+  
+  .header-image{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  
+  .return-icon{
+  color: black;
+  position: absolute;
+  top:5px;
+  left: 5px;
+  font-size: 35px;
+  }
+  
 
-.header-image{
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-}
-
-.return-icon{
-color: black;
-position: absolute;
-top:5px;
-left: 5px;
-font-size: 35px;
-}
+/*HEADER accueil*/
+.nav-home {
+    width: 100%;
+  }
+  
+  .content {
+    width: 100%;
+  }
+  
+  .location {
+    width: 100%;
+    height: 2rem;
+    background-color: #dddddd;
+    @include center;
+    color: rgb(65, 65, 65);
+  }
+  
+  .icon-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .logo-header {
+    width: 100%;
+    @include center;
+    font-size: 3rem;
+    font-family: Shrikhand;
+    box-shadow: 1px 1px 3px 1px gray;
+  }

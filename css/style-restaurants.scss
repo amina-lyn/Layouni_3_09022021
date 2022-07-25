@@ -1,0 +1,202 @@
+@import "./common.scss";
+
+/*----------------------Pages-----------------------*/
+
+/* MAIN */
+main{
+    width: 100%;
+  }
+  
+  .menu{
+    width: 100%;
+    border-radius: 50px 50px 0 0 ;
+    background-color: $background-color;
+   margin-top:-50px; 
+   
+  }
+  .title-restaurant{
+    @include center;
+  }
+  
+  .menu-title{
+    font-size: 35px;
+    padding: 35px 15px;
+    font-family: Shrikhand;
+  }
+  h2{
+    color: rgb(73, 73, 73);
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  .underliner{
+  height: 3px;
+  width: 50px;
+  background-color: $color-tertiary;
+  margin-left: 10px;
+  }
+  .section-menu__title{
+    width: 90%;
+    padding: 10px;
+  }
+  .cards-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes apparition-menu {
+   0% {opacity:0;
+    transform: translateY(30px);}
+   100% {opacity: 1;
+    transform: translateY(0);
+  }
+  }
+  .card-menu{
+    width: 90%;
+    height: 40px;
+    box-shadow: 6px 6px 6px 1px #dfdcdc;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    display:flex ;
+    flex-direction: column;
+    animation-name: apparition-menu;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+   }
+   
+  .card-2{
+    animation-delay :0.5s;
+  }
+  .card-3{
+    animation-delay :1s;
+  }
+  .card-4{
+    animation-delay: 1.5s;
+  }
+  
+  .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+  
+  .subtitle{
+  font-size:20px;
+  font-weight: 900;
+  padding-bottom: 5px;
+  }
+  
+  .text{
+    width: 100%;
+    color: rgb(73, 73, 73);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .price{
+    font-weight: bolder;
+    width: 50px;
+  }
+  .select-container{
+    width: 60px;
+    height:60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: $color-tertiary;
+    position: relative;
+    bottom: 35px;
+    margin-right: -68px;
+  }
+  .check{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .card-menu:hover{
+  & .select-container{
+    transform: translateX(-50px);
+    transition:linear 0.5s;
+  }
+  & .price{
+    transform: translateX(-15px);
+    transition:linear 0.5s;
+  }
+  & .text{
+    width: calc(100% - 100px);
+    transition:linear 0.5s;
+  }
+  & .check{
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+  & .info .price{
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  }
+  /* BUTTON */
+  .button-container {
+    width: 100%;
+    @include center;
+    padding-bottom: 40px;
+  }
+  .button {
+    height: 50px;
+    @include center;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: white;
+    font-weight: bold;
+    padding: 0px 40px;
+    border-radius: 50px;
+    &:hover {
+      background: linear-gradient($color-secondary-hover, $color-primary-hover);
+    }
+  }
+  /* COEUR */
+  .title-heart {
+    width: 20px;
+    height: 20px;
+    margin-right: -24px;
+    transition: 0.6s linear;
+  }
+  .title-heart_hidden {
+    opacity: 0;
+    transform: scale(0);
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.6s linear;
+  }
+  .heart-block {
+    &:hover {
+      & .title-heart {
+        opacity: 0;
+        transition: 0.6s linear;
+        
+      }
+      & .title-heart_hidden {
+        opacity: 1;
+        transform: scale(1);
+        transition: 0.6s linear;
+        
+      }
+    }
+  }
+  /*{
+     outline: solid 1px red}*/
+  
+  

@@ -1,154 +1,6 @@
-// /* IMPORT */
+@import"./common.scss";
 
-@import "../css/common/reset.scss";
-@import "../css/common/variables.scss";
-@import "../css/layout/main.css";
-@import "../css/layout/header.css";
-@import "../css/layout/footer.css";
-@import "../css/common/mixin.scss";
-@import "../css/accueil.css";
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import "./img-background-resto";
-// pages -> layout -> components
-/*
-	Standard CSS Reset
-	This is used to account for differences in browsers.
-	Without a reset stylesheet there could be differences
-	between browsers when loading your html website.
-    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: Roboto;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*Accueil*/
+/*----------------------Accueil-----------------------*/
 .load-spinner{
   animation: load-spinner 3s forwards linear;
   position: fixed;
@@ -157,7 +9,8 @@ table {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  opacity: 0.8;
+  opacity: 1;
+  z-index: 10;
 }
 .spinner-block {
   justify-content: center;
@@ -246,8 +99,9 @@ table {
   0% {
 transform: scale(1);
   }
-90% {
+80% {
   transform: scale(1);
+  opacity: 1;
 }
 99% {
   transform: scale(0);
@@ -260,43 +114,7 @@ transform: scale(1);
 }
 }
 
-/*HEADER*/
-.nav-home {
-  width: 100%;
-}
 
-.content {
-  width: 100%;
-}
-
-.location {
-  width: 100%;
-  height: 2rem;
-  background-color: #dddddd;
-  @include center;
-  color: rgb(65, 65, 65);
-}
-
-.icon-location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10px;
-}
-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-
-.logo-header {
-  width: 100%;
-  @include center;
-  font-size: 3rem;
-  font-family: Shrikhand;
-  box-shadow: 1px 1px 3px 1px gray;
-}
 /*Reservation*/
 .reservation {
   width: 100%;
@@ -398,13 +216,24 @@ h1 {
 
 .restaurant-card_image {
   height: 200px;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: flex-end;
   border-radius: 20px 20px 0 0;
+  overflow: hidden;
 }
-
+.restaurant-card_image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
+}
+.restaurant-card a {
+  text-decoration: none;
+  &:visited{
+    text-decoration: none;
+    color: black;
+  }
+}
 .nouveau {
   height: 30px;
   background-color: rgb(64, 206, 175);
@@ -414,6 +243,7 @@ h1 {
   @include center;
   margin-top: 15px;
   margin-right: 12px;
+  position: absolute;
 }
 .restaurant-card {
   box-shadow: 6px 6px 6px #f2f2f2;
@@ -462,47 +292,16 @@ h1 {
   &:hover {
     & .restaurant-heart {
       opacity: 0;
-      transition: 3s linear;
+      transition: 0.6s linear;
     }
     & .restaurant-heart_hidden {
       opacity: 1;
       transform: scale(1);
-      transition: 3s linear;
+      transition: 0.6s linear;
     }
   }
 }
-/*FOOTER*/
-footer {
-  background-color: black;
-}
-.logo-footer {
-  width: 90%;
-  font-size: 25px;
-  font-family: Shrikhand;
-  display: flex;
-  justify-content: flex-start;
-  padding: 5px 5px 5px 5px;
-  color:white;
-}
-.text-footer {
-  color: white;
-  padding: 5px 5px;
-  & i {
-    color: white;
-  }
-}
-.ustensils {
-  padding: 8px;
-}
-.handshake{
-  padding:0 8px 0 5px;
-}
-.text-without-icon {
-  padding: 5px 8px 8px 8px;
-}
-* a {
-  text-decoration: none;
-}
+
 
 /*IPAD VIEW*/
 
@@ -601,3 +400,6 @@ footer{
 
  /*{   outline: solid 1px red;
  }*/
+
+
+

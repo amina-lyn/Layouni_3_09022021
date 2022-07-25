@@ -5,19 +5,6 @@
 	between browsers when loading your html website.
     "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
 */
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/main.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/header.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/footer.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/accueil.css);
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/reset.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/variables.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/main.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/footer.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/layout/header.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/common/mixin.css);
-@import url(/Users/user/Desktop/Layouni_3_09022021/Layouni_3_09022021/css/accueil.css);
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400&display=swap");
 html,
@@ -150,142 +137,160 @@ table {
   border-spacing: 0;
 }
 
-/*
-	Standard CSS Reset
-	This is used to account for differences in browsers.
-	Without a reset stylesheet there could be differences
-	between browsers when loading your html website.
-    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
+/*FOOTER*/
+footer {
+  background-color: black;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.logo-footer {
+  width: 90%;
+  font-size: 25px;
+  font-family: Shrikhand;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px 5px 5px 5px;
+  color: white;
 }
 
-body {
-  line-height: 1;
+.text-footer {
+  color: white;
+  padding: 5px 5px;
 }
 
-ol,
-ul {
-  list-style: none;
+.text-footer i {
+  color: white;
 }
 
-blockquote,
-q {
-  quotes: none;
+.ustensils {
+  padding: 8px;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+.handshake {
+  padding: 0 8px 0 5px;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.text-without-icon {
+  padding: 5px 8px 8px 8px;
 }
+
+* a {
+  text-decoration: none;
+}
+
+/*HEADER page*/
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.logo-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-family: Shrikhand;
+  -webkit-box-shadow: 1px 1px 3px 1px;
+          box-shadow: 1px 1px 3px 1px;
+}
+
+.header-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.return-icon {
+  color: black;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 35px;
+}
+
+/*HEADER accueil*/
+.nav-home {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.location {
+  width: 100%;
+  height: 2rem;
+  background-color: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #414141;
+}
+
+.icon-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.logo-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-family: Shrikhand;
+  -webkit-box-shadow: 1px 1px 3px 1px gray;
+          box-shadow: 1px 1px 3px 1px gray;
+}
+
 /* IMG ACCUEIL */
 .restaurant-card_image1 {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -320,145 +325,7 @@ table {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
-/*
-	Standard CSS Reset
-	This is used to account for differences in browsers.
-	Without a reset stylesheet there could be differences
-	between browsers when loading your html website.
-    "https://www.codegrepper.com/code-examples/css/2020+scss+reset"
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: Roboto;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*Accueil*/
+/*----------------------Accueil-----------------------*/
 .load-spinner {
   -webkit-animation: load-spinner 3s forwards linear;
           animation: load-spinner 3s forwards linear;
@@ -468,7 +335,8 @@ table {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  opacity: 0.8;
+  opacity: 1;
+  z-index: 10;
 }
 
 .spinner-block {
@@ -627,9 +495,10 @@ table {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  90% {
+  80% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
   99% {
     -webkit-transform: scale(0);
@@ -649,9 +518,10 @@ table {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  90% {
+  80% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
   }
   99% {
     -webkit-transform: scale(0);
@@ -664,74 +534,6 @@ table {
     display: none;
     opacity: 0;
   }
-}
-
-/*HEADER*/
-.nav-home {
-  width: 100%;
-}
-
-.content {
-  width: 100%;
-}
-
-.location {
-  width: 100%;
-  height: 2rem;
-  background-color: #dddddd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #414141;
-}
-
-.icon-location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 10px;
-}
-
-p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 1rem;
-}
-
-.logo-header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3rem;
-  font-family: Shrikhand;
-  -webkit-box-shadow: 1px 1px 3px 1px gray;
-          box-shadow: 1px 1px 3px 1px gray;
 }
 
 /*Reservation*/
@@ -905,8 +707,6 @@ h1 {
 
 .restaurant-card_image {
   height: 200px;
-  background-size: cover;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,6 +714,23 @@ h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.restaurant-card_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-card a {
+  text-decoration: none;
+}
+
+.restaurant-card a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .nouveau {
@@ -933,6 +750,7 @@ h1 {
           align-items: center;
   margin-top: 15px;
   margin-right: 12px;
+  position: absolute;
 }
 
 .restaurant-card {
@@ -995,60 +813,16 @@ h1 {
 
 .heart-block:hover .restaurant-heart {
   opacity: 0;
-  -webkit-transition: 3s linear;
-  transition: 3s linear;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
 }
 
 .heart-block:hover .restaurant-heart_hidden {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: 3s linear;
-  transition: 3s linear;
-}
-
-/*FOOTER*/
-footer {
-  background-color: black;
-}
-
-.logo-footer {
-  width: 90%;
-  font-size: 25px;
-  font-family: Shrikhand;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 5px 5px 5px 5px;
-  color: white;
-}
-
-.text-footer {
-  color: white;
-  padding: 5px 5px;
-}
-
-.text-footer i {
-  color: white;
-}
-
-.ustensils {
-  padding: 8px;
-}
-
-.handshake {
-  padding: 0 8px 0 5px;
-}
-
-.text-without-icon {
-  padding: 5px 8px 8px 8px;
-}
-
-* a {
-  text-decoration: none;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
 }
 
 /*IPAD VIEW*/
@@ -1196,4 +970,4 @@ footer {
 
 /*{   outline: solid 1px red;
  }*/
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=style.css.map */
