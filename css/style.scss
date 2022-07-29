@@ -1,6 +1,8 @@
 @import"./common.scss";
 
 /*----------------------Accueil-----------------------*/
+/*MAIN*/
+
 .load-spinner{
   animation: load-spinner 3s forwards linear;
   position: fixed;
@@ -113,56 +115,6 @@ transform: scale(1);
   opacity: 0;
 }
 }
-
-
-/*Reservation*/
-.reservation {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-}
-
-h1 {
-  font-size: 22px;
-  padding: 40px 20px;
-}
-.reservation-title {
-  @include center;
-  font-weight: bold;
-  padding: 10px 90px;
-  text-align: center;
-}
-
-.reservation-subtitle {
-  width: 80%;
-  color: grey;
-  @include center;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.button-container {
-  width: 100%;
-  @include center;
-  padding-bottom: 40px;
-}
-.button {
-  height: 50px;
-  @include center;
-  background: linear-gradient($color-secondary, $color-primary);
-  color: white;
-  font-weight: bold;
-  padding: 0px 20px;
-  border-radius: 50px;
-  &:hover {
-    background: linear-gradient($color-secondary-hover, $color-primary-hover);
-  }
-}
-
-/*MAIN*/
 
 /*Fonctionnement*/
 .fonctionnement {
@@ -306,18 +258,7 @@ h1 {
 /*IPAD VIEW*/
 
 @media screen and (min-width: 768px) {
-  .logo-header {
-    padding: 20px 0 20px 0;
-  }
-  .reservation-title {
-    padding: 30px;
-  }
-  .reservation-subtitle {
-    padding-top: 30px;
-  }
-  .button-container {
-    padding-top: 30px;
-  }
+  
   .fonctionnement-title {
     display: flex;
     justify-content: center;
@@ -342,21 +283,22 @@ h1 {
       margin-left: -10px;
     }
   }
+  .fonctionnement-number{
+    height: 40px;
+    width: 40px
+  }
   .restaurant-title {
     @include center;
   }
-  .logo-footer{
-    width: 50%;
-    padding: 30px;
-  }
+  
 }
 
 /*DESKTOP VIEW*/
 @media screen and (min-width: 1024px) {
-  .fonctionnement-child{
+.fonctionnement-child{
     width: 250px;
     padding-right: 25px;
-  }
+}
 .restaurant-cards{
   display: flex;
   flex-wrap: wrap;
@@ -364,37 +306,9 @@ h1 {
 .restaurant-card{
   width: 350px;
 }
-footer{
-  width: 100%;
-  height: 300px;
-}
-.logo-footer{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  font-size: 30px;
-  margin: 0;
-}
-.list-footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
-  
-}
-.text-footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-.text-without-icon{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
+.fonctionnement-number{
+  height: 40px;
+  width: 40px
 }
 }
 
