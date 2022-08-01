@@ -1,4 +1,11 @@
-@import"./common.scss";
+@import "../css/common/reset.scss";
+@import "../css/common/variables.scss";
+@import "../css/common/mixin.scss";
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;800&display=swap");
+@import "./img-background-resto.scss";
 
 /*----------------------Accueil-----------------------*/
 /*MAIN*/
@@ -119,6 +126,7 @@ transform: scale(1);
 /*Fonctionnement*/
 .fonctionnement {
   width: 100%;
+  font-family: Raleway;
 }
 .fonctionnement-list {
   width: 100%;
@@ -164,6 +172,7 @@ transform: scale(1);
 /*Restaurants*/
 .restaurant {
   background-color: #f2f2f2;
+  font-family: Raleway;
 }
 
 .restaurant-card_image {
